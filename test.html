@@ -1,0 +1,63 @@
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">Project name</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li ng-repeat="(key, value) in categories"><a href="#cat/{{value.id}}">{{value.name}}</a></li>
+            
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+        <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post" ng-repeat="article in articles | orderBy:'-title'">
+            <h2 class="blog-post-title">{{article.title}}</h2>
+            <p class="blog-post-meta">{{article.date_published}} </p>
+
+            <p>{{article.body}} </p>
+            
+          </div><!-- /.blog-post -->
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+          <div class="sidebar-module">
+            <h4>Articles</h4>
+            <ol class="list-unstyled">
+              <li ng-repeat="article in articles | orderBy:'-title'">
+                <a href="#article/{{article.id}}">{{ article.title }}</a>
+              </li>
+              
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>group by cat</h4>
+            <ol class="list-unstyled">
+              <li ng-repeat="(key, value) in categories  | orderBy:'name'">
+                Group name: {{ value.name }}
+                <ol class="list-unstyled">
+                  <li ng-repeat="article in articles | filterBy: ['category_id']: value.id">
+                     <a href="#article/{{article.id}}">{{ article.title }}</a>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+   

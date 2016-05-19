@@ -1,0 +1,74 @@
+{
+	"data": {
+		"articles": [{
+			"id": "1",
+			"title": "article 1",
+			"image": "image.png",
+			"body": "article 1 body",
+			"date_published": "2016-05-05",
+			"category_id": "1"
+		}, {
+			"id": "2",
+			"title": "article 2",
+			"image": "image.png",
+			"body": "article 2 body",
+			"date_published": "2016-05-05",
+			"category_id": "2"
+		},{
+			"id": "3",
+			"title": "article 3",
+			"image": "image.png",
+			"body": "article 3 body",
+			"date_published": "2016-05-05",
+			"category_id": "3"
+		},{
+			"id": "4",
+			"title": "article 4",
+			"image": "image.png",
+			"body": "article 4 body",
+			"date_published": "2016-05-05",
+			"category_id": "4"
+		},{
+			"id": "5",
+			"title": "article 5",
+			"image": "image.png",
+			"body": "article 5 body",
+			"date_published": "2016-05-05",
+			"category_id": "1"
+		}, {
+			"id": "6",
+			"title": "article 6",
+			"image": "image.png",
+			"body": "article 6 body",
+			"date_published": "2016-05-05",
+			"category_id": "1"
+		},{
+			"id": "7",
+			"title": "article 7",
+			"image": "image.png",
+			"body": "article 7 body",
+			"date_published": "2016-05-05",
+			"category_id": "1"
+		},{
+			"id": "8",
+			"title": "article 8",
+			"image": "image.png",
+			"body": "article 8 body",
+			"date_published": "2016-05-05",
+			"category_id": "2"
+		}],
+		"categories": [{
+			"name": "cate-1",
+			"id": 1
+		}, {
+			"name": "cate-2",
+			"id": 2
+		}, {
+			"name": "cate-3",
+			"id": 3
+		}, {
+			"name": "cate-4",
+			"id": 4
+		}]
+	}
+}
